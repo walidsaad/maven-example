@@ -79,6 +79,7 @@ static Connection conn = null;
  
 		try {
 			log("-------- Connexion au serveur de données MYSQL ------------");
+			log("-------- TEST MAVEN GITHUB ------------");
 			makeJDBCConnection();
 			log("-------- Afficher toutes les sessions de formations ------------");
 			getDataFromDB();
