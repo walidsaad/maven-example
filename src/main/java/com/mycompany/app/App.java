@@ -35,27 +35,7 @@ static Connection conn = null;
 		}
  
 	}
- 
-	private static void addDataToDB(String companyName, String address, int totalEmployee, String webSite) {
- 
-		try {
-			String insertQueryStatement = "INSERT  INTO  Employee  VALUES  (?,?,?,?)";
- 
-			statement = conn.prepareStatement(insertQueryStatement);
-			statement.setString(1, companyName);
-			statement.setString(2, address);
-			statement.setInt(3, totalEmployee);
-			statement.setString(4, webSite);
- 
-			// execute insert SQL statement
-			statement.executeUpdate();
-			log(companyName + " added successfully");
-		} catch (
- 
-		SQLException e) {
-			e.printStackTrace();
-		}
-	}
+
  
 	private static void getDataFromDB() {
  
